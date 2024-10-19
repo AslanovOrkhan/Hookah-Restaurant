@@ -53,6 +53,6 @@ body {
 /* media queries */
 @media (max-width: 991px) {
   .container {
-    padding: 2.5rem 5%;
+    padding: 2.5rem 3%;
   }
 }

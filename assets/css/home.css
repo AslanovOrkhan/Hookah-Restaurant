@@ -88,32 +88,9 @@
   font-family: "Work Sans", Sans-serif;
   letter-spacing: 1px;
 }
-@media (max-width: 991px) {
-  .homeText {
-    width: 95%;
-  }
-  .homeText h4 {
-    text-align: center;
-    font-size: 35px;
-    line-height: 1em;
-  }
-  .homeText h2 {
-    font-size: 52px;
-  }
-
-  .count div:last-child {
-    padding-left: 30px;
-  }
-  .count div h2 {
-    font-size: 50px;
-  }
-  .count div p {
-    font-size: 10px;
-  }
-}
 /* home section end */
 /* about section start */
-/* .aboutCardContainer {
+.aboutCardContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -156,7 +133,6 @@
 .aboutCardContainer .aboutImage {
   flex: 1;
   height: 38rem;
-  overflow: hidden;
   margin-right: 35px;
   position: relative;
 }
@@ -207,8 +183,85 @@
 }
 .about_third {
   flex-direction: row-reverse;
-} */
+  margin-top: 6rem;
+}
 /* about section end */
+@media (max-width: 991px) {
+  .homeText {
+    width: 95%;
+  }
+  .homeText h4 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 1em;
+  }
+  .homeText h2 {
+    font-size: 52px;
+  }
+  .count div:last-child {
+    padding-left: 30px;
+  }
+  .count div h2 {
+    font-size: 50px;
+  }
+  .count div p {
+    font-size: 10px;
+  }
+  .aboutCardContainer {
+    flex-direction: column;
+    gap: 45px;
+  }
+  .about_container .bgLeftImage {
+    top: 15%;
+    max-width: 200px;
+  }
+  .about_container .bgRightImage {
+    bottom: 6%;
+    width: 150px;
+   }
+  .aboutCardContainer .aboutImage {
+    flex: 1 1 100%;
+    width: 70%;
+    margin-right: 0;
+  }
+  .aboutImage .image {
+    width: 130%;
+    height: 80%;
+    object-fit: contain;
+  }
+  .aboutCardContainer .content {
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .aboutCardContainer .aboutImage {
+    margin-right: 0;
+  }
+  .aboutCardContainer .content h3 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .aboutCardContainer .content span {
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.4em;
+  }
+  .about_third {
+    margin-top: 1rem;
+  }
+  .about_third .content span {
+    font-size: 30px;
+  }
+  .aboutCardContainer .content p {
+    text-align: center;
+    font-size: 18px;
+    padding-right: 0;
+  }
+  .aboutCardContainer .content .btn {
+    text-align: center;
+  }
+}
 /* product section start */
 /* .ShishaTasts {
   display: grid;
