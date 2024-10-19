@@ -524,6 +524,121 @@
   transform: translate(-8%, -6%);
 }
 /* card section end */
+/* open hours section start */
+.OpeningHours {
+  background-image: url(/assets/images/r9e8gyer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+.OpeningHours::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  z-index: -1;
+  background-image: linear-gradient(180deg, #09090b 0%, #09090b 100%);
+}
+.OpeningHours .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.OpeningHours .title h3 {
+  color: #30fdff;
+  font-family: "Cherish", Sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+.OpeningHours .title span {
+  color: #ffffff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -1.5px;
+}
+.OpeningHours .title p {
+  color: #c6c6c6;
+  font-family: "DM Sans", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+.OpeningHours .content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 55px;
+  margin-top: 6rem;
+}
+.OpeningHours .content .map {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.OpeningHours .content .map iframe {
+  object-fit: cover;
+  opacity: 0.9;
+  min-width: 100%;
+  height: 498px;
+  border: none;
+  outline: none;
+  cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
+}
+.content .hours {
+  border: 2px solid #30fdff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 35px;
+  padding: 30px;
+  flex: 1;
+}
+.content .hours .title {
+  color: #ffffff;
+  font-family: "Montserrat Alternates", Sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+.content .hours ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+}
+.content .hours ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+.content .hours ul li span {
+  font-family: "Work Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* open hours section end */
 /* media queries */
 @media (max-width: 991px) {
   .homeText {
@@ -633,6 +748,33 @@
   .ClientThink .title span {
     text-align: center;
   }
+  .OpeningHours .title h3,
+  .OpeningHours .title span,
+  .OpeningHours .title p {
+    text-align: center;
+  }
+  .OpeningHours .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+  .OpeningHours .content .map {
+    flex: 1 1 100%;
+  }
+  .OpeningHours .content .map iframe {
+    height: 400px;
+  }
+  .content .hours {
+    padding: 20px;
+    width: 100%;
+  }
+  .content .hours .title {
+    font-size: 35px;
+    text-align: center;
+  }
+  .content .hours ul {
+    gap: 1.3rem;
+  }
 }
 @media (max-width: 576px) {
   .ReserveContainer {
@@ -667,118 +809,6 @@
   }
 }
 
-/* open hours section start */
-/* .OpeningHours {
-  background-image: url(/assets/images/r9e8gyer.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  z-index: 1;
-}
-.OpeningHours::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.7;
-  z-index: -1;
-  background-image: linear-gradient(180deg, #09090b 0%, #09090b 100%);
-}
-.OpeningHours .title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-.OpeningHours .title h3 {
-  color: #30fdff;
-  font-family: "Cherish", Sans-serif;
-  font-size: 52px;
-  font-weight: 400;
-  line-height: 1.2em;
-}
-.OpeningHours .title span {
-  color: #ffffff;
-  font-family: "Montserrat Alternates", Sans-serif;
-  font-size: 46px;
-  font-weight: 500;
-  line-height: 1.2em;
-  letter-spacing: -1.5px;
-}
-.OpeningHours .title p {
-  color: #c6c6c6;
-  font-family: "DM Sans", Sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 1.6em;
-}
-.OpeningHours .content {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  gap: 55px;
-  margin-top: 6rem;
-}
-.OpeningHours .content .map {
-  position: relative;
-  flex: 1;
-  height: 498px;
-}
-.OpeningHours .content .map iframe {
-  object-fit: cover;
-  opacity: 0.9;
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
-}
-.content .hours {
-  border: 2px solid #30fdff;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 35px;
-  padding: 30px;
-  flex: 1;
-}
-.content .hours .title {
-  color: #ffffff;
-  font-family: "Montserrat Alternates", Sans-serif;
-  font-size: 46px;
-  font-weight: 500;
-  line-height: 1.2em;
-  letter-spacing: 1px;
-  text-align: left; */
-/* border-bottom: 1px solid #fff;
-  padding-bottom: 5px;
-}
-.content .hours .hours-item {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  overflow: hidden;
-}
-.content .hours .hours-item li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  width: 100%;
-}
-.content .hours .hours-item li span {
-  font-family: "Work Sans", Sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #ffffff; */
-/* } */
-/* open hours section end */
 /* footer start */
 /* footer {
   border-top: 0.1px solid #272727;
