@@ -637,8 +637,28 @@
   font-weight: 400;
   color: #ffffff;
 }
-
 /* open hours section end */
+/* footer start */
+footer {
+  border-top: 0.1px solid #272727;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+}
+footer .content {
+  color: #9097aa;
+  font-size: 17px;
+  line-height: 1.7rem;
+  letter-spacing: 0.5px;
+}
+footer p {
+  color: #ffffff;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+/* footer end */
 /* media queries */
 @media (max-width: 991px) {
   .homeText {
@@ -775,6 +795,13 @@
   .content .hours ul {
     gap: 1.3rem;
   }
+  footer {
+    flex-direction: column-reverse;
+    gap: 1.2rem;
+  }
+  footer .content {
+    text-align: center;
+  }
 }
 @media (max-width: 576px) {
   .ReserveContainer {
@@ -808,26 +835,3 @@
     object-fit: contain;
   }
 }
-
-/* footer start */
-/* footer {
-  border-top: 0.1px solid #272727;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 5%;
-}
-footer .content {
-  color: #9097aa;
-  font-size: 17px;
-  line-height: 1.7rem;
-  letter-spacing: 0.5px;
-}
-
-footer p {
-  color: #ffffff;
-  font-size: 17px;
-  letter-spacing: 1px;
-} */
-
-/* footer end */
