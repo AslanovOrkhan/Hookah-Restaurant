@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huka Restaurant</title>
     <link rel="stylesheet" href="/assets/css/home.css" />
+    <!-- AOS animation css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CCherish%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat+Alternates%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CWork+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=6.6.1"
@@ -15,7 +23,7 @@
     />
   </head>
   <body>
-    <header id="header">
+    <header id="header" data-aos="zoom-in-down" data-aos-duration="1000">
       <a href="#" class="logo"> huka </a>
       <nav class="navbar">
         <ul>
@@ -29,7 +37,7 @@
             <a href="#venue">Venue</a>
           </li>
           <li>
-            <a href="#service">Servive</a>
+            <a href="#services">Service</a>
           </li>
           <li>
             <a href="#">Blog</a>
@@ -119,7 +127,7 @@
         </div>
       </section>
       <!-- about section end -->
-      <!-- product section start -->
+      <!-- shisha tasts section start -->
       <section class="ShishaTasts">
         <div class="card">
           <img src="/assets/images/oerugbjrg.png" alt="" />
@@ -162,9 +170,9 @@
           </div>
         </div>
       </section>
-      <!-- product section end -->
+      <!-- shisha tasts section end -->
       <!-- services section start -->
-      <!-- <section class="service_container container">
+      <section class="service_container container" id="services">
         <div class="bgLeftImage">
           <img src="/assets/images/ryheryj.png" alt="" />
         </div>
@@ -181,15 +189,25 @@
               wholesome, and unique ingredients. Find dishes fortified with
               fresh spices, vegetables, seafood, and meat.
             </p>
+            <div class="services_count">
+              <div class="">
+                <span>30+</span>
+                <p>Food Variant</p>
+              </div>
+              <div>
+                <span> 100+</span>
+                <p>Person Capacity</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="bgRightImage">
           <img src="/assets/images/5yhu5yh.png" alt="" />
         </div>
-      </section> -->
+      </section>
       <!-- services section end -->
       <!-- reserve section start -->
-      <!-- <section class="ReserveContainer">
+      <section class="ReserveContainer">
         <div class="reserve container">
           <h3>Reserve</h3>
           <h1>Reserve A Table</h1>
@@ -198,7 +216,7 @@
           </span>
           <a href="#" class="btn"> Book now </a>
         </div>
-      </section> -->
+      </section>
       <!-- reserve section end -->
       <!-- blog section start -->
       <!-- <section class="blog_container">
@@ -346,6 +364,13 @@
 
       <!-- footer end -->
     </main>
+    <!-- AOS js link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>

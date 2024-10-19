@@ -30,3 +30,6 @@ window.onscroll = function () {
     }
   }
 };
+
+// AOS function
+AOS.init();
