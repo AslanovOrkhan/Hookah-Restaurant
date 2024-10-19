@@ -18,7 +18,7 @@
 }
 .homeContainer video {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   opacity: 0.7;
 }
@@ -88,9 +88,32 @@
   font-family: "Work Sans", Sans-serif;
   letter-spacing: 1px;
 }
+@media (max-width: 991px) {
+  .homeText {
+    width: 95%;
+  }
+  .homeText h4 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 1em;
+  }
+  .homeText h2 {
+    font-size: 52px;
+  }
+
+  .count div:last-child {
+    padding-left: 30px;
+  }
+  .count div h2 {
+    font-size: 50px;
+  }
+  .count div p {
+    font-size: 10px;
+  }
+}
 /* home section end */
 /* about section start */
-.aboutCardContainer {
+/* .aboutCardContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -184,10 +207,10 @@
 }
 .about_third {
   flex-direction: row-reverse;
-}
+} */
 /* about section end */
 /* product section start */
-.ShishaTasts {
+/* .ShishaTasts {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 3rem 0;
@@ -252,10 +275,10 @@
 }
 .ShishaTasts .card:hover .text_content {
   transform: translateX(0);
-}
+} */
 /* product section end */
 /* service section start */
-.service_container {
+/* .service_container {
   position: relative;
 }
 .service_container .bgLeftImage {
@@ -270,8 +293,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.service_container .bgRightImage {
+} */
+/* .service_container .bgRightImage {
   position: absolute;
   bottom: 50%;
   right: 0;
@@ -283,10 +306,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 /* service section end */
 /* reserve section start */
-.ReserveContainer {
+/* .ReserveContainer {
   background-image: url(/assets/images/r9e8gyer.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -313,8 +336,8 @@
   opacity: 0.8;
   z-index: -1;
   background-image: linear-gradient(180deg, #09090b 0%, #09090b 100%);
-}
-.reserve h3 {
+} */
+/* .reserve h3 {
   text-align: center;
   color: #30fdff;
   font-family: "Cherish", Sans-serif;
@@ -339,10 +362,10 @@
   font-size: 19px;
   font-weight: 400;
   line-height: 1.6em;
-}
+} */
 /* reserve section end */
 /* blog section start */
-.blog_container {
+/* .blog_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 10rem 0;
@@ -375,10 +398,10 @@
 }
 .blog-item:hover::before {
   background-color: #30fdff66;
-}
+} */
 /* blog section end */
 /* card section start */
-.ClientThink {
+/* .ClientThink {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -493,10 +516,10 @@
   top: 8%;
   left: 6%;
   transform: translate(-8%, -6%);
-}
+} */
 /* card section end */
 /* open hours section start */
-.OpeningHours {
+/* .OpeningHours {
   background-image: url(/assets/images/r9e8gyer.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -582,8 +605,8 @@
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: 1px;
-  text-align: left;
-  border-bottom: 1px solid #fff;
+  text-align: left; */
+/* border-bottom: 1px solid #fff;
   padding-bottom: 5px;
 }
 .content .hours .hours-item {
@@ -604,11 +627,11 @@
   font-family: "Work Sans", Sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: #ffffff;
-}
+  color: #ffffff; */
+/* } */
 /* open hours section end */
 /* footer start */
-footer {
+/* footer {
   border-top: 0.1px solid #272727;
   display: flex;
   align-items: center;
@@ -626,6 +649,6 @@ footer p {
   color: #ffffff;
   font-size: 17px;
   letter-spacing: 1px;
-}
+} */
 
 /* footer end */
