@@ -371,7 +371,35 @@
 }
 /* reserve section end */
 /* Restaurant menu section start */
-
+.restaurant_menu {
+  position: relative;
+}
+.restaurant_menu .restaurant_bg_left {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  z-index: -1;
+  width: 16rem;
+  height: 22rem;
+}
+.restaurant_menu .restaurant_bg_left img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurant_menu .restaurant_bg_right {
+  position: absolute;
+  bottom: 7%;
+  right: 0;
+  z-index: -1;
+  width: 12rem;
+  height: 22rem;
+}
+.restaurant_menu .restaurant_bg_right img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .restaurant_menu .title {
   display: flex;
   flex-direction: column;
@@ -964,5 +992,13 @@ footer p {
   }
   .menu_product .product-item ul li p {
     font-size: 14px;
+  }
+  .restaurant_menu .restaurant_bg_right {
+    bottom: 0;
+    width: 10rem;
+  }
+  .restaurant_menu .restaurant_bg_left {
+    top: 0;
+    width: 10rem;
   }
 }
