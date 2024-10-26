@@ -806,6 +806,9 @@ footer p {
     font-size: 52px;
     text-align: center;
   }
+  .homeText span{
+    text-align: center;
+  }
   .count div:last-child {
     padding-left: 30px;
   }
