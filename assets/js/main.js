@@ -1,6 +1,38 @@
+// let menu = document.querySelector("#menu");
+// let navbar = document.querySelector(".navbar");
+// const navbarLinks = document.querySelectorAll("#header a");
+
+// menu.addEventListener("click", () => {
+//   menu.classList.toggle("bx-x");
+//   navbar.classList.toggle("active");
+// });
+
+// navbarLinks.forEach((link) => {
+//   link.addEventListener("click", () => {
+//     navbar.classList.remove("active");
+//     menu.classList.remove("bx-x");
+//   });
+// });
+
+// var header = document.getElementById("header");
+// var scrolled = false;
+
+// window.onscroll = function () {
+//   if (window.pageYOffset > 50) {
+//     if (!scrolled) {
+//       header.classList.add("scrolled");
+//       scrolled = true;
+//     }
+//   } else {
+//     if (scrolled) {
+//       header.classList.remove("scrolled");
+//       scrolled = false;
+//     }
+//   }
+// };
 let menu = document.querySelector("#menu");
 let navbar = document.querySelector(".navbar");
-const navbarLinks = document.querySelectorAll("#header a");
+let navbarLinks = document.querySelectorAll("#header .navbar ul li");
 
 menu.addEventListener("click", () => {
   menu.classList.toggle("bx-x");
@@ -9,6 +41,12 @@ menu.addEventListener("click", () => {
 
 navbarLinks.forEach((link) => {
   link.addEventListener("click", () => {
+    // İçərisindəki a elementini tapıb ona klik edir
+    let anchor = link.querySelector("a");
+    if (anchor) {
+      anchor.click();
+    }
+
     navbar.classList.remove("active");
     menu.classList.remove("bx-x");
   });
