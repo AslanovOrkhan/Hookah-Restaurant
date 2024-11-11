@@ -733,6 +733,7 @@
   gap: 35px;
   padding: 30px;
   flex: 1;
+  overflow: hidden;
 }
 .content .hours .title {
   color: #ffffff;
@@ -750,7 +751,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  overflow: hidden;
 }
 .content .hours ul li {
   display: flex;
@@ -792,7 +792,7 @@ footer p {
 @media (max-width: 991px) {
   .homeText {
     width: 95%;
-     align-items: center;
+    align-items: center;
     top: 85%;
     left: 50%;
     transform: translate(-50%, -85%);
@@ -806,7 +806,7 @@ footer p {
     font-size: 52px;
     text-align: center;
   }
-  .homeText span{
+  .homeText span {
     text-align: center;
   }
   .count div:last-child {
