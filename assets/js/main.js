@@ -41,7 +41,6 @@ menu.addEventListener("click", () => {
 
 navbarLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    // İçərisindəki a elementini tapıb ona klik edir
     let anchor = link.querySelector("a");
     if (anchor) {
       anchor.click();
